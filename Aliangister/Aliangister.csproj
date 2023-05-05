@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA0FA898-EDB4-4DDA-9957-EAACB9867B19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Aliangister</RootNamespace>
+    <AssemblyName>Aliangister</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CdClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CdClientes.Designer.cs">
+      <DependentUpon>CdClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CdPecas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CdPecas.Designer.cs">
+      <DependentUpon>CdPecas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conn.cs" />
+    <Compile Include="TbClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TbClientes.Designer.cs">
+      <DependentUpon>TbClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TbPecas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TbPecas.Designer.cs">
+      <DependentUpon>TbPecas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usinagem_alianca_dbDataSet.cs">
+      <DependentUpon>usinagem_alianca_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="usinagem_alianca_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>usinagem_alianca_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CdClientes.resx">
+      <DependentUpon>CdClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CdPecas.resx">
+      <DependentUpon>CdPecas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TbClientes.resx">
+      <DependentUpon>TbClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TbPecas.aa.resx">
+      <DependentUpon>TbPecas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TbPecas.resx">
+      <DependentUpon>TbPecas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="usinagem_alianca_dbDataSet.xsc">
+      <DependentUpon>usinagem_alianca_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="usinagem_alianca_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>usinagem_alianca_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="usinagem_alianca_dbDataSet.xss">
+      <DependentUpon>usinagem_alianca_dbDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
