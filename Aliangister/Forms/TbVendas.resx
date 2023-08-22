@@ -117,20 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="008cacde-1d8f-4bc1-b150-000a96ba17bd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\008cacde-1d8f-4bc1-b150-000a96ba17bd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5a5bb128-78af-44de-b045-163955b0e959" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5a5bb128-78af-44de-b045-163955b0e959.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Aliangister Logo PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Aliangister Logo PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="f9fbfb94-34dc-415d-8d68-f43dc82285de" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\f9fbfb94-34dc-415d-8d68-f43dc82285de.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cbcb6cf6-370d-4da4-9f26-c8e8fdbc0e89" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cbcb6cf6-370d-4da4-9f26-c8e8fdbc0e89.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

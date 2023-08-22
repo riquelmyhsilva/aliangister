@@ -14,6 +14,9 @@ namespace Aliangister
 {
     public partial class CdClientes : Form
     {
+
+        private Form activeTbForm;
+
         public CdClientes()
         {
             InitializeComponent();
@@ -54,8 +57,7 @@ namespace Aliangister
                 string.IsNullOrEmpty(txt_Telefone_CdClientes.Text) ||
                 string.IsNullOrEmpty(txt_Empresa_CdClientes.Text))
             {
-                lbl_ToStrSta_CdClientes.Text = "Preencha os campos obrigatorios.";
-                status_BarStatus_CdClientes.Refresh();
+                MessageBox.Show("Preencha todos os campos.");
                 return;
             }
 
@@ -77,8 +79,8 @@ namespace Aliangister
                     }
 
                     limparTela();
-                    lbl_ToStrSta_CdClientes.Text = "Cliente Cadastrado";
-                    status_BarStatus_CdClientes.Refresh();
+                    MessageBox.Show("Cliente Cadastrado.");
+
                 }
             }
             catch (Exception ex)
@@ -90,20 +92,34 @@ namespace Aliangister
         //
         // botão de vizualizar tabela clientes
         //
+
+        /*public void OpenTbForm(Form TbForm)
+        {
+
+            activeTbForm = TbForm;
+
+            if (activeTbForm != null && !activeTbForm.IsDisposed)
+            {
+                activeTbForm.BringToFront();
+                return;
+            }
+            activeTbForm = new TbClientes();
+            activeTbForm.Show();
+
+        }*/
         private TbClientes _tbClientesForm = null;
 
         private void btn_vizTbClientes_CdClientes_Click(object sender, EventArgs e)
         {
-            // Se a janela TbClientes já está aberta, não faz nada
-            if (_tbClientesForm != null && !_tbClientesForm.IsDisposed)
             {
-                _tbClientesForm.BringToFront();
-                return;
+                if (_tbClientesForm != null && !_tbClientesForm.IsDisposed)
+                {
+                    _tbClientesForm.BringToFront();
+                    return;
+                }
+                _tbClientesForm = new TbClientes();
+                _tbClientesForm.Show();
             }
-
-            // Se a janela TbClientes não está aberta, cria uma nova instância e mostra
-            _tbClientesForm = new TbClientes();
-            _tbClientesForm.Show();
         }
 
         private void label_Aliangister_Click(object sender, EventArgs e)
@@ -130,10 +146,20 @@ namespace Aliangister
         //
         private void CdClientes_Load(object sender, EventArgs e)
         {
-            lbl_BarStatus_CdClientes.Text = "";
+
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Telefone_CdClientes_TextChanged(object sender, EventArgs e)
         {
 
         }

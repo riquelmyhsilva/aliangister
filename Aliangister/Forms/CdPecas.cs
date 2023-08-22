@@ -55,8 +55,7 @@ namespace Aliangister
                 string.IsNullOrEmpty(txt_ValorTotal_CdPecas.Text) ||
                 string.IsNullOrEmpty(maskedtxt_Data_CdPecas.Text))
             {
-                toolStripStatusLabel1.Text = "Preencha os campos obrigatorios.";
-                statusStrip1.Refresh();
+                MessageBox.Show("Preencha todos os campos.");
                 return;
             }
 
@@ -81,8 +80,7 @@ namespace Aliangister
                     }
 
                     limparTela();
-                    toolStripStatusLabel1.Text = "Peça Cadastrada";
-                    statusStrip1.Refresh();
+                    MessageBox.Show("Peça Cadastrada.");
                 }
             }
             catch (Exception ex)
@@ -92,7 +90,7 @@ namespace Aliangister
 
         }
         //
-        // botão de exibir a tabela
+        // botão de exibir a tabela de peças
         //
         private TbPecas _tbPecasForm = null;
         private void btn_vizTbPecas_CdPecas_Click(object sender, EventArgs e)
@@ -132,7 +130,7 @@ namespace Aliangister
         //
         private void CdPecas_Load(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "";
+
         }
     }
 }

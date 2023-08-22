@@ -46,35 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CdClientes.cs">
+    <Compile Include="Forms\ExcluirCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CdClientes.Designer.cs">
+    <Compile Include="Forms\ExcluirCadastro.Designer.cs">
+      <DependentUpon>ExcluirCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CdClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CdClientes.Designer.cs">
       <DependentUpon>CdClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="CdPecas.cs">
+    <Compile Include="Forms\CdPecas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CdPecas.Designer.cs">
+    <Compile Include="Forms\CdPecas.Designer.cs">
       <DependentUpon>CdPecas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Conn.cs" />
-    <Compile Include="TbClientes.cs">
+    <Compile Include="Forms\CdVendas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TbClientes.Designer.cs">
+    <Compile Include="Forms\CdVendas.Designer.cs">
+      <DependentUpon>CdVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conn.cs" />
+    <Compile Include="Forms\TbClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TbClientes.Designer.cs">
       <DependentUpon>TbClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="TbPecas.cs">
+    <Compile Include="Forms\TbPecas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TbPecas.Designer.cs">
+    <Compile Include="Forms\TbPecas.Designer.cs">
       <DependentUpon>TbPecas.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaInicial.cs">
+    <Compile Include="Forms\TbVendas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaInicial.Designer.cs">
+    <Compile Include="Forms\TbVendas.Designer.cs">
+      <DependentUpon>TbVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelaInicial.Designer.cs">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -87,22 +105,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>usinagem_alianca_dbDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CdClientes.resx">
+    <EmbeddedResource Include="Forms\CdClientes.resx">
       <DependentUpon>CdClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CdPecas.resx">
+    <EmbeddedResource Include="Forms\CdPecas.resx">
       <DependentUpon>CdPecas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TbClientes.resx">
+    <EmbeddedResource Include="Forms\CdVendas.resx">
+      <DependentUpon>CdVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExcluirCadastro.resx">
+      <DependentUpon>ExcluirCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TbClientes.resx">
       <DependentUpon>TbClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TbPecas.aa.resx">
+    <EmbeddedResource Include="Forms\TbPecas.aa.resx">
       <DependentUpon>TbPecas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TbPecas.resx">
+    <EmbeddedResource Include="Forms\TbPecas.resx">
       <DependentUpon>TbPecas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaInicial.resx">
+    <EmbeddedResource Include="Forms\TbVendas.resx">
+      <DependentUpon>TbVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -113,6 +140,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -137,6 +165,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a5bb128-78af-44de-b045-163955b0e959.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008cacde-1d8f-4bc1-b150-000a96ba17bd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cbcb6cf6-370d-4da4-9f26-c8e8fdbc0e89.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
